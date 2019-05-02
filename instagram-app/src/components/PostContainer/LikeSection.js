@@ -1,10 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledLikeSection = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    width: 10%;
+`;
 
 const LikeSection = props => {
     console.log("Like section props", props)
     return [
-      <div
-        className="like-section"
+      <StyledLikeSection
         key="likes-icons-container"
         onClick={props.incrementLike}
       >
@@ -14,7 +20,7 @@ const LikeSection = props => {
         <div className="like-section-wrapper">
           <i className="far fa-comment" />
         </div>
-      </div>,
+      </StyledLikeSection>,
       <div className="like-section" key="likes-container">
         <div className="like-section-wrapper">{props.likes} </div>
       </div>

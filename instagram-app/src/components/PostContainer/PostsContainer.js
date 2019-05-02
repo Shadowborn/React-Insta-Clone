@@ -1,13 +1,23 @@
 import React from 'react';
 import Post from './Post';
-import './PostContainer.css';
+import styled from 'styled-components';
+
+// div
+const StyledPostContainer = styled.div`
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+`;
+
 
 const PostsContainer = props => {
   return (
     <>
-    <div className="post-container">
+    <StyledPostContainer>
       {props.posts.map(p => <Post key={p.imageUrl} post={p} />)}
-    </div>
+    </StyledPostContainer>
     </>
   );
 };

@@ -2,7 +2,21 @@ import React from "react";
 import LikeSection from './LikeSection';
 import PostHeader from "./PostHeader";
 import CommentSection from "../CommentSection/CommentSection";
+import styled from 'styled-components';
 
+// div
+const StyledEachPostContainer = styled.div`
+    border: 1px solid #00000033;
+    border-radius: 3px;
+    text-align: left;
+    margin-bottom: 10%;
+    background: white;
+`;
+const StyledMainPostImg = styled('img')`
+    min-height: 600px;
+    max-width: 600px;
+    width:100%;
+`;
 
 class Post extends React.Component {
     constructor(props) {
@@ -34,14 +48,14 @@ class Post extends React.Component {
         console.log("Likes State from Post.js ", this.state);
         return (
             <>
-            <div className="eachPostContainer">
+            <StyledEachPostContainer>
             <div>
             <PostHeader 
                 username={this.props.post.username}// defines username for Postheader.js to use
                 thumbnailUrl={this.props.post.thumbnailUrl}//defines thumbnailurl for Postheader.js to use
             />
             </div>
-            <img className="main-post-image" alt="post item" src={this.props.post.imageUrl}/>
+            <StyledMainPostImg alt="post item" src={this.props.post.imageUrl}/>
             <div>
             <LikeSection
                 incrementLike={this.incrementLike}
@@ -54,7 +68,7 @@ class Post extends React.Component {
                 comments={this.props.post.comments}
             />
             </div>
-            </div>
+            </StyledEachPostContainer>
             </>
         );
     }
