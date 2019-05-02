@@ -12,14 +12,15 @@ class Post extends React.Component {
         };
     }
     incrementLike = () => {
-        let likes = this.state.likes +1;
-        this.setState({ likes })
+        let likes = this.state.likes + 1;
+        this.setState({ likes });
     };
     
     render() {
         console.log("Likes State from Post.js ", this.state);
         return (
             <>
+            <div className="eachPostContainer">
             <div>
             <PostHeader 
                 username={this.props.post.username}// defines username for Postheader.js to use
@@ -38,6 +39,7 @@ class Post extends React.Component {
                 postId={this.props.post.imageUrl}
                 comments={this.props.post.comments}
             />
+            </div>
             </div>
             </>
         );

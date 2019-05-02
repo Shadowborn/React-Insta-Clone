@@ -13,7 +13,7 @@ const PostHeader = props => {
             />
         </div>
         <div className="post-username">
-            {props.username}
+            <strong>{props.username}</strong>
         </div>
         </div>
         </>

@@ -1,4 +1,29 @@
 const dummyData = [
+  // {
+  //   username: "PrinceJon",
+  //   thumbnailUrl:
+  //     "https://i.imgur.com/rmQnCXp.jpg",
+
+  //   imageUrl:
+  //     "https://media.giphy.com/media/4W0Tyn2CiSjkI/giphy.gif",
+  //   likes: 0,
+  //   timestamp: "July 13th 2017, 5:12:40 pm",
+  //   comments: [
+  //     {
+  //       username: "PrinceJon",
+  //       text:
+  //         "We've got more than just delicious coffees to offer at our shops!"
+  //     },
+  //     {
+  //       username: "biancasaurus",
+  //       text: "Looks delicious!"
+  //     },
+  //     {
+  //       username: "martinseludo",
+  //       text: "Can't wait to try it!"
+  //     }
+  //   ]
+  // },
   {
     username: "philzcoffee",
     thumbnailUrl:

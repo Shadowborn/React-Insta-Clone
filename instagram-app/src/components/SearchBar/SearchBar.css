@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 19px;
+    border-bottom: 1px solid #00000045;
+}
+.logoHeader img {
+    width: 25%;
+    display: flex;
+}
+.inputWrap {
+    display: flex;
+    width:100%;
+    align-items: center;
+}
+.iconWrap {
+    display: flex;
+}
+
+.search{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
