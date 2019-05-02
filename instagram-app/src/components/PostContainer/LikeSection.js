@@ -1,6 +1,7 @@
 import React from 'react';
 
 const LikeSection = props => {
+    console.log("Like section props", props)
     return [
       <div
         className="like-section"
@@ -15,9 +16,10 @@ const LikeSection = props => {
         </div>
       </div>,
       <div className="like-section" key="likes-container">
-        <div className="like-section-wrapper">{props.likes}</div>
+        <div className="like-section-wrapper">{props.likes} </div>
       </div>
     ];
   };
   
   export default LikeSection;
+  
