@@ -1,0 +1,32 @@
+.post-container {
+    width: 100%;
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.post-header {
+    display: flex;
+}
+.post-profile-image {
+    width: 10%;
+}
+.post-header img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.post-username {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.main-post-image {
+    min-height: 600px;
+    max-width: 600px;
+
+}
