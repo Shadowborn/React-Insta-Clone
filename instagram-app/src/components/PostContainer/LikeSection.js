@@ -6,6 +6,10 @@ const StyledLikeSection = styled.div`
     justify-content: space-evenly;
     width: 10%;
 `;
+const StyledLikeCount = styled.div`
+    display: flex;
+    padding-left: 10px;
+`;
 
 const LikeSection = props => {
     console.log("Like section props", props)
@@ -21,9 +25,9 @@ const LikeSection = props => {
           <i className="far fa-comment" />
         </div>
       </StyledLikeSection>,
-      <div className="like-section" key="likes-container">
-        <div className="like-section-wrapper">{props.likes} </div>
-      </div>
+      <StyledLikeCount key="likes-container">
+        <div className="like-section-wrapper">{props.likes} likes</div>
+      </StyledLikeCount>
     ];
   };
   

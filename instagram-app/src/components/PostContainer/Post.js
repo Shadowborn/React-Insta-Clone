@@ -11,6 +11,9 @@ const StyledEachPostContainer = styled.div`
     text-align: left;
     margin-bottom: 10%;
     background: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
 `;
 const StyledMainPostImg = styled('img')`
     min-height: 600px;
